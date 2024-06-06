@@ -8,6 +8,7 @@ Created a simple React application using an array with manually added games. Pro
 
 Feel free to download the project and do your thing!
 
+Don't forget to install the dependencies 😊
 ```bash
 npm i
 ```
