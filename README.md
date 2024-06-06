@@ -4,9 +4,11 @@
 
 Hey 👋🏼
 
-Created a simple React application using an array with manually added games.
+Created a simple React application using an array with manually added games. Project needs some adjustments!
 
-Url 🔗:
+Feel free to download the project and do your thing!
 
+```bash
+npm i```
 
 || Tech Stack ||
