@@ -9,6 +9,7 @@ Created a simple React application using an array with manually added games. Pro
 Feel free to download the project and do your thing!
 
 ```bash
-npm i```
+npm i
+```
 
 || Tech Stack ||
