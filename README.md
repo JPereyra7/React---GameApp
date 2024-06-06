@@ -14,3 +14,5 @@ npm i
 ```
 
 || Tech Stack ||
+
+[![My Skills](https://skillicons.dev/icons?i=react,ts,vite,css)](https://skillicons.dev)
