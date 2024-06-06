@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("./assets/bgbgbg.png");
+  /* Additional background properties */
+  background-size: cover; /* Cover the entire background */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.macContainer {
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Adjust border color for glass effect */
+  padding: 5px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  background-color: rgba(41, 83, 86, 0.5); /* Adjust background color with opacity */
+  backdrop-filter: blur(10px); /* Apply backdrop filter for glass effect */
+  margin-top: 2em;
+  padding-bottom: 3em;
+  border-radius: 10px;
+}
+
+.upperRow {
+  display: flex;
+  gap: 0.3em;
+  margin: 8px 0 0 10px;
+  align-items: center;
+  border-bottom: 1px solid rgba(147, 147, 147, 0.142);
+}
+
+.upperNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarMenuLinks {
+  display: flex; /* Ensure the container is a flex container */
+  flex-direction: row; /* Align items in a row */
+  align-items: center;
+  gap: 2em; /* Add some space between the links */
+  margin-left: 6em;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbarMenuLinks a {
+  color: rgb(158, 158, 158);
+  text-decoration: none; /* Remove underline from links */
+}
+
+.navbarMenuLinks a:hover {
+  transition: 0.4s;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.navbarMenuLinks a:focus {
+  transition: 0.4s;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.redButton {
+  width: 15px;
+  height: 15px;
+  background-color: #f96057;
+  border-radius: 50%;
+}
+
+.yellowButton {
+  width: 15px;
+  height: 15px;
+  background-color: #f8ce52;
+  border-radius: 50%;
+}
+
+.greenButton {
+  width: 15px;
+  height: 15px;
+  background-color: #5fcf65;
+  border-radius: 50%;
+}
+
+.upperTopSearchbar {
+  background-color: #14162b;
+  border: none;
+  padding: 8px 85px;
+  border-radius: 4px;
+  color: white;
+  margin-left: 1em;
+}
+
+.upperTopSearchbar:focus {
+  border-bottom: 1px solid rgb(77, 77, 77);
+  outline: none;
+}
+
+.upperNavbarRight {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  margin-left: 15em;
+}
+
+.bellIcon {
+  color: white;
+}
+
+.cloudIcon {
+  color: white;
+}
+
+.backgroundimageIcon {
+  width: 1.8em;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.heroBanner {
+  max-width: 100vw;
+  margin-left: 7em;
+  margin-top: 1.5em;
+}
+
+.bestSellerHeader {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  border-top: 1px solid rgba(241, 241, 241, 0.064);
+}
+
+/* GameList.tsx */
+.gameContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameImages {
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 60%;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.gameImages:active {
+  transition: 0.3s;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 390px) {
+  .upperNavbarRight {
+    margin-right: 10px;
+  }
+  .bestSellerHeader {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .macContainer {
+    width: 100vw;
+    margin-top: 10em;
+  }
+
+
+  .navbarMenuLinks {
+    display: none;
+  }
+
+  .gameImages {
+    width: 80%;
+    margin: 1em auto;
+  }
+  .navbarMenuLinks a {
+    display: none;
+  }
+  .navbarMenuLinks {
+    gap: 0.3em;
+  }
+  .redButton {
+    width: 10px;
+    height: 10px;
+  }
+
+  .upperNavbarRight {
+    margin-left: 11em;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+  }
+
+  .bellIcon {
+    width: 10px;
+  }
+
+  .cloudIcon {
+    width: 15px
+  }
+
+  .backgroundimageIcon {
+    width: 15px;
+  }
+
+  .yellowButton {
+    width: 10px;
+    height: 10px;
+  }
+  .greenButton {
+    width: 10px;
+    height: 10px;
+  }
+  .upperTopSearchbar {
+    font-size: 0.4em;
+    padding: 0;
+  }
+  .heroBanner {
+    margin-left: 0em;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+}
